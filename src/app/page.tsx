@@ -18,8 +18,6 @@ import Image from 'next/image';
 import { Skeleton } from '@/components/ui/skeleton';
 import { formatTokenAmount, parseTokenAmount } from '@/lib/utils'; // Import formatting utils
 
-// Mock balance function (replace with actual fetching logic if available)
-// Needs user's public key to fetch balance
 const useMockTokenBalance = (token: Token | undefined, publicKey: string | null): number | null => {
   const [balance, setBalance] = useState<number | null>(null);
 

@@ -5,10 +5,10 @@ import React, { createContext, useContext, useMemo, useState, useEffect, useCall
 import { Connection, clusterApiUrl, Transaction, VersionedTransaction, PublicKey } from '@solana/web3.js';
 import type { TransactionInstruction } from '@solana/web3.js';
 import { useToast } from '@/hooks/use-toast';
-import { useWallet } from '@lazorkit/wallet'; // Import LazorKit hook
-import type { SwapTransaction, Token } from '@/services/raydium'; // Import types
-import { Buffer } from 'buffer'; // Import Buffer
-import process from 'process'; // Import process
+import { useWallet } from '@lazorkit/wallet'; // lazor Kit hook
+import type { SwapTransaction, Token } from '@/services/raydium'; // raydium service types
+import { Buffer } from 'buffer';
+import process from 'process';
 
 // Define the Solana network to use (devnet as requested)
 const SOLANA_NETWORK = 'devnet';
